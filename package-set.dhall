@@ -6,8 +6,13 @@ let Package =
 let
   -- This is where you can add your own packages to the package-set
   additions = [
-       { name = "ed25519"
-        , version = "v0.1.1"
+       { name = "motoko-sha2"
+        , version = "v2.0.0"
+        , repo = "https://github.com/timohanke/motoko-sha2"
+        , dependencies = [ "base", "iterext" ] : List Text
+        },
+        { name = "ed25519"
+        , version = "v1.0.1"
         , repo = "https://github.com/nirvana369/ed25519.git"
         , dependencies = [ "base" ] : List Text
         }
